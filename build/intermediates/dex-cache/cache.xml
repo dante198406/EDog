@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\zhangzhaolei.EROBBING\AppData\Local\Android\StudioProjects\EDog\app\libs\Android_Map_V2.0.4.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ee07e22e8490f8a8a1afcd1da34d0eea2daa9cca">
+        <dex dex="C:\Users\zhangzhaolei.EROBBING\AppData\Local\Android\StudioProjects\EDog\app\build\intermediates\pre-dexed\debug\Android_Map_V2.0.4-d2a71bd58f87e950347053050b3f6b961fd5877c.jar" />
+    </item>
+    <item
+        jar="C:\Users\zhangzhaolei.EROBBING\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\zhangzhaolei.EROBBING\AppData\Local\Android\StudioProjects\EDog\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1e979073a3b7ccc2484b51b4d1920bbe7b03b7ba.jar" />
+    </item>
+
+</items>

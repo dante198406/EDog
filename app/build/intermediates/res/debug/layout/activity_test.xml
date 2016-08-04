@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+>
+
+
+    <Button
+        android:id="@+id/button_testinit"
+        android:layout_width="150px"
+        android:layout_height="105px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="28px"
+        android:text="init" />
+        
+            <Button
+        android:id="@+id/button_testuinit"
+        android:layout_width="150px"
+        android:layout_height="105px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="28px"
+        android:text="uinit" />
+
+            <Button
+                android:id="@+id/button_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/button_testinit"
+                android:layout_below="@+id/button_testinit"
+                android:layout_marginTop="43dp"
+                android:text="SD卡路径" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_sd"
+                android:layout_marginTop="39dp"
+                android:ems="10"
+                android:inputType="text"
+                android:lines="5"
+                android:maxLines="5" >
+
+                <requestFocus />
+            </EditText>
+
+</RelativeLayout><!-- From: file:/C:/Users/zhangzhaolei.EROBBING/AppData/Local/Android/StudioProjects/EDog/app/src/main/res/layout/activity_test.xml -->

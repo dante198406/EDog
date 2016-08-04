@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_top" >
+
+        <Button
+            android:id="@+id/set_about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back_s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_about"
+            android:textAppearance="@style/TextAppearanceTitleLagerForWhite" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/set_about_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_width"
+        android:cacheColorHint="#00000000"
+        android:clickable="false"
+        android:divider="@drawable/home_icon_line2"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:footerDividersEnabled="true"
+        android:scrollingCache="true" />
+
+</LinearLayout><!-- From: file:/C:/Users/zhangzhaolei.EROBBING/AppData/Local/Android/StudioProjects/EDog/app/src/main/res/layout/activity_set_about.xml -->

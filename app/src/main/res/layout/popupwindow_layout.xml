@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/land_bg_dog_list"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical" >
+    
+        <!-- 第一行 -->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/popup_ll_traffice"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_traffic_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_traffic_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="1"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="2"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_flow_spd"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_flow_spd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_flow_speed" />
+        </LinearLayout>
+
+
+<LinearLayout
+            android:tag="3"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed30"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_30" />
+        </LinearLayout>
+    
+
+   <!-- 第二行 -->
+
+
+
+   <LinearLayout
+         android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:tag="4"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed40"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_40" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+       
+    
+    
+ 
+
+        <LinearLayout
+            android:tag="5"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed50"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="6"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed60"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_60" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="7"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed70"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_70" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_70" />
+        </LinearLayout>
+
+
+  <!-- 第三行 -->
+    <LinearLayout
+         android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        
+        
+        <LinearLayout
+            android:tag="8"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed80"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_80" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_80" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+  
+
+        <LinearLayout
+            android:tag="9"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed90"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_90" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="10"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed100"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="11"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed110"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_110" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_110" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="12"
+            android:background="@drawable/add_eeye_ll_bg"
+            android:id="@+id/popup_ll_speed120"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_spd_120" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeye_speed_120" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    </LinearLayout>
+
+</LinearLayout>

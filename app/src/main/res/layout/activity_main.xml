@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#222222" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/speedometer_off" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/speedometer_num_off" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/main_layout_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/fx_bg"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/main_iv_direction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:src="@drawable/fxjt" />
+
+                            <TextView
+                                android:id="@+id/main_tv_direction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_layout_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/speed_sw" >
+
+                                <TextView
+                                    android:id="@+id/main_tv_speed_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="0"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/speed_sw" >
+
+                                <TextView
+                                    android:id="@+id/main_tv_speed_two"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="0"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/speed_gw" >
+
+                                <TextView
+                                    android:id="@+id/main_tv_speed_three"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="0"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=" km/h"
+                            android:textColor="#0c0c0c"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 左上 -->
+
+                <Button
+                    android:id="@+id/main_btn_imitate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/land_btn_imitate" />
+
+                <!-- 右上 -->
+
+                <Button
+                    android:id="@+id/main_btn_spk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/land_btn_spk_on" />
+
+                <Button
+                    android:id="@+id/main_btn_updatepoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/land_btn_update_point" />
+
+                <RelativeLayout
+                    android:id="@+id/main_rl_guide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/main_btn_guide_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btn_guide_exit" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/main_btn_guide_exit"
+                        android:background="@drawable/guide_prg_bg"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/guide_prg_out_bar" />
+
+                        <ImageView
+                            android:id="@+id/main_iv_imitate_inbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/guide_prg_in_bar" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_gps_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/main_btn_updatepoint"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/no_gps" />
+
+                <!-- 浮动小窗口 -->
+
+                <Button
+                    android:id="@+id/main_btn_floatwin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/land_btn_float_window" />
+
+                <!-- 设置 -->
+
+                <Button
+                    android:id="@+id/main_btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/land_btn_setting" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/main_layout_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/blue_bg" >
+
+                <TextView
+                    android:id="@+id/main_tv_dataversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="数据版本："
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/main_iv_radar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/main_tv_dataversion" />
+
+                <TextView
+                    android:id="@+id/main_tv_kilometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="已行驶0.0公里"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/main_iv_warnradar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_speed_km"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/main_iv_warntype"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/main_iv_warnspeed"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/main_tv_distance"
+                                android:textColor="#ff0000"   
+                                android:textSize="60sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/block_tv_speed_lb"
+                               android:textColor="#ffffff"   
+                                android:textSize="22sp" 
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="平均速度" />
+
+                            <TextView
+                                android:id="@+id/block_tv_speed"
+                                
+                 
+                               
+                                android:textColor="#ff0000"   
+                                android:textSize="30sp" 
+
+                                
+                                
+                                
+                                
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/block_iv_limitspeed"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/block_tv_space_lb"
+                                 android:textColor="#ffffff"   
+                                android:textSize="22sp" 
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="区间距离" />
+
+                            <TextView
+                                android:id="@+id/block_tv_space"
+                                                             
+                                android:textColor="#ff0000"   
+                                android:textSize="30sp"    
+                                
+                                
+                                
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/main_tv_muteinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="#ff0000"   
+                        android:textSize="25sp" />
+                        
+                        
+      
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                </LinearLayout>
+            </RelativeLayout>
+
+           <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/land_btn_add_monitor" 
+                android:layout_weight="1">
+
+             <ProgressBar
+                    android:id="@+id/pb_green"
+                    style="@style/StyleProgressBarGreen"
+                    android:layout_width="fill_parent"
+                  android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    
+                   android:background="@drawable/shape_pb_bg"
+                    android:max="100"
+                  
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/pb_red"
+                    style="@style/StyleProgressBarRed"
+                    android:layout_width="fill_parent"
+                  
+                     android:layout_height="30dp"
+                    android:layout_margin="3dp"
+                    android:layout_below="@id/pb_green"
+                    
+                  android:background="@drawable/shape_pb_bg"
+                    android:max="100"
+                  
+                    android:paddingLeft="2dp"
+                    
+                     android:paddingRight="2dp"
+                    
+                      android:visibility="invisible" />  
+                    
+              <Button
+                    android:id="@+id/main_btn_add_monitor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                     android:layout_alignParentBottom="true"
+                     
+                         android:layout_alignParentTop="true"
+                     
+                     android:background="#00000000" />
+                     
+                   
+</RelativeLayout>
+                    
+</LinearLayout>
+            </LinearLayout>
+
+             
+<com.hdsc.edog.view.RingView
+                
+android:id="@+id/main_ringview"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+android:layout_alignParentLeft="true"
+  
+android:layout_alignParentTop="true" />
+
+</RelativeLayout>

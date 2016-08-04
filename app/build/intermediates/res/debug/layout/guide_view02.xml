@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/view1"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/TextAppearanceLagerForWhite"
+        android:text="点击进入" />
+
+</RelativeLayout><!-- From: file:/C:/Users/zhangzhaolei.EROBBING/AppData/Local/Android/StudioProjects/EDog/app/src/main/res/layout/guide_view02.xml -->

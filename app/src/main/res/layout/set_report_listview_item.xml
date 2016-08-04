@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/set_report_lv_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearanceContextLager"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/set_report_lv_item_iv_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/switch_off"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/set_report_lv_item_iv_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/switch_on" />
+
+    <Spinner
+        android:id="@+id/set_report_lv_item_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" 
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

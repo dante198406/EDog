@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:background="#00000000" 
+    android:orientation="vertical"  
+    android:padding="5dp"> 
+ 
+    <ImageView  
+        android:id="@+id/notify_exit_iv" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/ic_launcher" 
+         
+        /> 
+    <TextView 
+        android:id="@+id/notify_exit_tv1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/app_name" 
+        android:layout_toRightOf="@id/notify_exit_iv" 
+        android:layout_centerHorizontal="true" 
+        android:layout_marginLeft="15dp" 
+        android:textSize="20sp"
+      /> 
+    <TextView  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/notify_alert"
+        android:layout_below="@id/notify_exit_tv1" 
+        android:layout_toRightOf="@id/notify_exit_iv" 
+        android:layout_marginLeft="15dp"
+        /> 
+     
+</RelativeLayout> 

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin" >
+
+    <RelativeLayout
+        android:id="@+id/eeyes_rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/eeyes_ll_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eeyes_tv_longi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经度：0" />
+
+            <TextView
+                android:id="@+id/eeyes_tv_late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="纬度：0" />
+
+            <TextView
+                android:id="@+id/eeyes_tv_bear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方向：0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/eeyes_ll_location"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eeyes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eeyes_update" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/eeyes_btn_next"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_centerInParent="true"
+                    android:text="上一步"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/eeyes_btn_cancel"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_toRightOf="@id/eeyes_btn_next"
+                    android:text="取消" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/eeyes_btn_step3_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:text="其他安全信息坐标"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/eeyes_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/eeyes_btn_step3_next"
+        android:layout_below="@id/eeyes_rl_top"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <ScrollView
+        android:id="@+id/eeyes_ll_stepfour"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eeyes_rl_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:orientation="horizontal"
+                 >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/eeyes_btn_zxdd"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="正向1点" />
+
+                    <Button
+                        android:id="@+id/eeyes_btn_fxdd"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="反向1点" />
+
+                    <Button
+                        android:id="@+id/eeyes_btn_sxed"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="正反方向2点" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/eeyes_btn_zfdd"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="左方向1点" />
+
+                    <Button
+                        android:id="@+id/eeyes_btn_yfdd"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="右方向1点" />
+
+                    <Button
+                        android:id="@+id/eeyes_btn_zyed"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_height"
+                        android:text="左右方向2点" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/eeyes_btn_qhzysd"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_height="@dimen/btn_2height"
+                        android:text="前后左右方向4点" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/C:/Users/zhangzhaolei.EROBBING/AppData/Local/Android/StudioProjects/EDog/app/src/main/res/layout/eeyes_layout.xml -->

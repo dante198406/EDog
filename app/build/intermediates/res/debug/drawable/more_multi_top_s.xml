@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_pressed="true"
+       android:drawable="@drawable/more_table_sel_multi_top" />
+</selector><!-- From: file:/C:/Users/zhangzhaolei.EROBBING/AppData/Local/Android/StudioProjects/EDog/app/src/main/res/drawable/more_multi_top_s.xml -->
